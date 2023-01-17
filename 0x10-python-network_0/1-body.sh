@@ -1,3 +1,3 @@
 #!/bin/bash
-# Script that shows the response body redirecting /route_1
-curl -Ls "$1"
+# Gets the body of a response from a URL if the status code is 200
+curl -s -L "$1"

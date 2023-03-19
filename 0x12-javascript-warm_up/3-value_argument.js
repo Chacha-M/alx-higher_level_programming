@@ -1,4 +1,11 @@
 #!/usr/bin/node
-const arg0 = process.argv[2];
-
-console.log(arg0 !== undefined ? arg0 : 'No argument');
+let x = 0;
+process.argv.forEach((val, index) => {
+  x++;
+  if (index === 2) {
+    console.log(`${val}`);
+  }
+});
+if (x <= 2) {
+  console.log('No argument');
+}
